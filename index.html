@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <title>Title of the document</title>
+    </head>
+    <script> function baskara( a, b, c )  {
+        let delta = Math.pow(-b, 2) - (4 * a) * c
+        if (delta < 0) {
+            console.log('Delta negativo')
+        }
+        let raiz = Math.sqrt(delta)
+        let base = 2 * a
+        let raiz1 = -b + raiz
+        let raiz2 = -b - raiz
+        let valorfinal1 = raiz1 / base
+        let valorfinal2 = raiz2 / base
+        alert ('Valor 1: ' + valorfinal1.toFixed(2) + ' ' + 'Valor 2: ' + valorfinal2.toFixed(2))
+        
+         
+    }</script>
+        <form onsubmit="baskara(document.getElementById('a').value, document.getElementById('b').value, document.getElementById('c').value)">
+            <br>Numero 1:<br>
+            <input type="number" name='a' id='a'>
+            Numero 2:<br>
+            <input type="number" name='b' id='b'>
+            Numero 3:<br>
+            <input type="number" name='c' id='c'>
+            <input type="submit" value="submit">
+        </form>
+    <body>
+    </body>
+    
+    </html> 
